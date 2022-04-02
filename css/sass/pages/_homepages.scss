@@ -1,0 +1,144 @@
+/* Start slider */
+.slider{
+  blockquote{
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
+      font-family: tahoma, arial;
+      line-height: 1.7;
+      text-align: center;
+      text-align:justify;
+      color:#5e5e5e;
+      width:80%;
+      margin: 30px auto; 
+    }
+    img{
+      max-width: 100%;
+    }
+    .bullets{
+      text-align: center;
+      li{
+        display: inline-block;
+        width:20px;
+        height: 20px;
+        background-color: $greyColor;
+        border-radius: 50%;
+        border:3px solid $greyColor;
+        cursor: pointer;
+        &.active,
+        &:hover{
+          background-color: #fff;
+          border:3px solid #333;
+        }
+      }
+    }
+}
+/* End slider */
+
+/*start services*/
+.services{
+  .service-box{
+    @media #{$minMedium} {
+      float: $floatLeft;
+      width: (100% / 3);
+      &:not(:last-of-type) {
+        padding-right: 20px;
+      }
+    }
+    @media #{$minSmall} {
+      text-align: center;
+    }
+    @media #{$maxMobile} {
+      i{
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+    
+    .service-title{
+      color:#666;
+      i{
+        font-size:35px;
+        position: relative;
+        top:4px;
+      }
+    }
+    .service-desc{
+      color:#777;
+      text-align: justify;
+      line-height: 1.5;
+    }
+    .link{
+      color: $redColor;
+      text-decoration: none;
+    }
+  }
+}
+/*End services*/
+/*Start our players*/
+.our-players{
+  .player-box{
+    @media #{$minSmall} and #{$maxSmall} {
+      float: $floatLeft;
+      width: (88% / 2);
+      text-align: center;
+      margin-bottom: 40px;
+      &:not(:last-of-type) {
+        margin-left: 3%;
+      }
+    }
+    @media #{$minMedium} {
+      float: $floatLeft;
+      width: (100% / 3);
+      text-align: $text-left;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media #{$minLarge} {
+      width: (100% / 5);
+
+    }
+    @media #{$maxMobile} {
+      margin-bottom: 40px;
+    }
+   
+    .player-title{
+      color:#666;
+      font-weight: normal;
+      span{
+        font-weight: bold;
+      }
+    }
+    .player-desc{
+      color:#777;
+      text-align: justify;
+      line-height: 1.5;
+    }
+    .link{
+      color: $redColor;
+      text-decoration: none;
+    }
+  }
+}
+/*End our players*/
+
+/*Start lorem ipsum*/
+.lorem-ipsum{
+  .lorem-box{
+    @media #{$maxMobile} {
+      display: block;
+      margin-bottom: 40px;
+    }
+    @media #{$minSmall} {
+      float:$floatLeft;
+      width:(94% / 3);
+      &:not(:last-of-type){
+        margin-right: 3%;
+    }
+    }
+    .lorem-img{
+      max-width:100%;
+    }
+  }
+}
+/*End lorem ipsum*/

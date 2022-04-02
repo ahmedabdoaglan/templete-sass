@@ -1,0 +1,124 @@
+
+@import 'sass/helpers/variables';
+
+$floatLeft: right;
+$floatRight: left;
+
+$text-right: left;
+$text-left: right;
+
+.header{
+    .logo{
+        @media #{$minMedium} {
+            float: $floatLeft;
+            text-align: $text-left;
+        }
+        .the-toggler{
+            right: auto;
+            left: 15px;
+        }
+    }
+    .navbar{
+       
+        @media #{$minMedium} {
+            float: $floatLeft;
+        }
+        li{
+            float: $floatLeft;
+            @media #{$maxMobile} {
+               text-align: $text-left;
+            }
+        }
+    }
+}
+  /*start services*/
+  .services{
+    .service-box{
+      @media #{$minMedium} {
+        float: $floatLeft;
+        width: (100% / 3);
+        &:not(:last-of-type) {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  /*End services*/
+  /*Start our players*/
+  .our-players{
+    .player-box{
+      @media #{$minSmall} {
+        float: $floatLeft;
+      }
+      @media #{$minMedium} {
+        text-align: $text-left;
+      }
+    }
+  }
+  /*End our players*/
+  
+  /*Start lorem ipsum*/
+  .lorem-ipsum{
+    .lorem-box{
+      @media #{$maxMobile} {
+        display: block;
+        margin-bottom: 40px;
+      }
+      @media #{$minSmall} {
+        float:$floatLeft;
+        width:(94% / 3);
+        &:not(:last-of-type){
+          padding-left: 3%;
+      }
+      }
+      .lorem-img{
+        max-width: 100%;
+      }
+    }
+  }
+  /*End lorem ipsum*/
+
+  /* start footer */
+.footer{
+    .gallery, .info, .contact{
+        float: $floatLeft;
+    }
+    .gallery{
+        .img-box{
+            img{
+                @media #{$minSmall} {
+                    float: $floatLeft;
+                }
+            }
+            .text{
+                @media #{$minSmall} {
+                    float: $floatLeft;
+                }
+            }
+        }
+    }
+    .copyright{
+        .text{
+          @media #{$maxMobile} {
+            display: block;
+            margin-bottom: 30px;
+          }
+          @media #{$minSmall} {
+            float: $floatLeft;
+          }
+            
+        }
+        .author{
+          @media #{$maxMobile} {
+            display: block;
+          }
+          @media #{$minSmall} {
+            text-align: $text-right;
+            float: $floatLeft;
+          }  
+        }
+    }
+}
+/* End footer */
+
+  

@@ -1,0 +1,122 @@
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+
+.header .logo .the-toggler {
+  right: auto;
+  left: 15px;
+}
+
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+  }
+}
+
+.header .navbar li {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right;
+  }
+}
+
+/*start services*/
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right;
+    width: 33.33333%;
+  }
+  .services .service-box:not(:last-of-type) {
+    padding-left: 20px;
+  }
+}
+
+/*End services*/
+/*Start our players*/
+@media (min-width: 768px) {
+  .our-players .player-box {
+    float: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-players .player-box {
+    text-align: right;
+  }
+}
+
+/*End our players*/
+/*Start lorem ipsum*/
+@media (max-width: 767px) {
+  .lorem-ipsum .lorem-box {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: right;
+    width: 31.33333%;
+  }
+  .lorem-ipsum .lorem-box:not(:last-of-type) {
+    padding-left: 3%;
+  }
+}
+
+.lorem-ipsum .lorem-box .lorem-img {
+  max-width: 100%;
+}
+
+/*End lorem ipsum*/
+/* start footer */
+.footer .gallery, .footer .info, .footer .contact {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .copyright .text {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .copyright .text {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .copyright .author {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .copyright .author {
+    text-align: left;
+    float: right;
+  }
+}
+
+/* End footer */
+/*# sourceMappingURL=homepages-rtl.css.map */
