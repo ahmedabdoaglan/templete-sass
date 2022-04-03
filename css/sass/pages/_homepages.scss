@@ -101,7 +101,9 @@
     @media #{$maxMobile} {
       margin-bottom: 40px;
     }
-   
+    .player-img{
+      max-width: 100%;
+    }
     .player-title{
       color:#666;
       font-weight: normal;
